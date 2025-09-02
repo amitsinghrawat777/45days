@@ -88,6 +88,26 @@
   font-weight: normal;
 }
 
+.author a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: inherit;
+  transition: opacity 0.3s ease;
+}
+
+.author a:hover {
+  opacity: 0.8;
+}
+
+.author-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 .navigation {
   display: flex;
   flex-direction: column;

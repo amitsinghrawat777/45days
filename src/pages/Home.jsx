@@ -12,7 +12,17 @@ function Home() {
           <span className="highlight"> Fullstack Development </span>
           challenge
         </h1>
-        <h2 className="author">by Amit Rawat</h2>
+        <h2 className="author">
+          by{" "}
+          <a href="https://github.com/amitsinghrawat777" target="_blank" rel="noopener noreferrer">
+            <img 
+              src="https://avatars.githubusercontent.com/u/101490788?v=4" 
+              alt="GitHub Profile" 
+              className="author-image"
+            />
+            Amit Singh Rawat
+          </a>
+        </h2>
       </div>
       
       <nav className="navigation">

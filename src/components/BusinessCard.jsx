@@ -1,5 +1,11 @@
+import { Link } from "react-router-dom";
 function BusinessCard() {
-  return (
+  return (<>
+    <nav>
+        <Link to="/" style={{ color: 'black', textDecoration: 'none' }}>⬅back to home</Link>
+    </nav>
+  <div className="App">
+    
     <div className="business-card">
       <img 
         src="https://avatars.githubusercontent.com/u/101490788?v=4"
@@ -24,7 +30,7 @@ function BusinessCard() {
       <p className="business-description">
         A Full-Stack web developer specializing in building responsive web applications in React.
       </p>
-    </div>
+    </div></div></>
   );
 }
 export default BusinessCard;

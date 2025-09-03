@@ -47,6 +47,16 @@ function Home() {
           <span className="project-name">Grade Calculator</span>
           <span className="arrow">→</span>
         </Link>
+        <Link 
+          to="/day4" 
+          className={`nav-link ${activeLink === 'day4' ? 'active' : ''}`}
+          onMouseEnter={() => setActiveLink('day4')}
+          onMouseLeave={() => setActiveLink(null)}
+        >
+          <span className="day-number">Day 4</span>
+          <span className="project-name">Skill Manager</span>
+          <span className="arrow">→</span>
+        </Link>
       </nav>
     </div>
   )

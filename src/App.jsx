@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import BusinessCard from "./components/BusinessCard"
 import GradeCalculator from "./pages/GradeCalculator"
+import SkillManager from "./pages/SkillManager"
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route path="/business_card" element={<BusinessCard />} />
           <Route path="/" element={<Home />} />
           <Route path="/grade_calculator" element={<GradeCalculator />} />
+          <Route path="/day4" element={<SkillManager />} />
         </Routes>
       </div>
     </Router>

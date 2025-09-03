@@ -10,7 +10,7 @@ function Home() {
         <h1 className="main-title">
           Welcome to 45 days of
           <span className="highlight"> Fullstack Development </span>
-          challenge
+           challenge
         </h1>
         <h2 className="author">
           by{" "}

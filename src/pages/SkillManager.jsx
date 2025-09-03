@@ -28,17 +28,36 @@ function SkillManager() {
       <nav style={{
         position: 'absolute',
         top: '20px',
-        left: '20px'
+        left: '20px',
+        zIndex: 10
       }}>
-        <Link to="/" style={{
-          color: '#fff',
-          textDecoration: 'none',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '5px',
-          fontSize: '1rem'
-        }}>
-          ← Back to Home
+        <Link 
+          to="/" 
+          style={{
+            color: '#fff',
+            textDecoration: 'none',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            fontSize: '1rem',
+            padding: '10px 20px',
+            background: 'rgba(255, 255, 255, 0.1)',
+            borderRadius: '30px',
+            backdropFilter: 'blur(10px)',
+            border: '1px solid rgba(255, 255, 255, 0.1)',
+            transition: 'all 0.3s ease',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+          }} hover={{
+            background: 'rgba(255, 255, 255, 0.15)',
+            transform: 'translateY(-2px)',
+            boxShadow: '0 6px 12px rgba(0, 0, 0, 0.15)',
+            borderColor: 'rgba(96, 165, 250, 0.5)'
+          }}>
+          <span style={{
+            fontSize: '1.2rem',
+            marginRight: '2px'
+          }}>←</span>
+          <span>Back to Home</span>
         </Link>
       </nav>
 

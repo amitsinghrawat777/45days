@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import ThemeProvider from "@/components/ui/ThemeProvider";
 import { Link } from "react-router-dom";
 
 // Counter component using React state

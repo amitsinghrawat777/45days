@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import ThemeProvider from "@/components/ui/ThemeProvider";
+import { Link } from "react-router-dom";
 
 // Counter component using React state
 function Counter() {
@@ -22,7 +23,8 @@ function Counter() {
 
   const isDark = theme === "dark";
 
-  return (
+  return (<>
+  
     <div
       style={{
         display: "flex",
@@ -36,6 +38,34 @@ function Counter() {
         transition: "background 0.3s",
       }}
     >
+      <Link 
+          to="/" 
+          style={{
+            position: 'absolute',
+            top: '20px',
+            left: '20px',
+            zIndex: 10,
+            color: '#fff',
+            textDecoration: 'none',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '8px',
+            fontSize: '1rem',
+            padding: '10px 20px',
+            background: 'rgba(255, 255, 255, 0.1)',
+            borderRadius: '30px',
+            backdropFilter: 'blur(10px)',
+            border: '1px solid rgba(255, 255, 255, 0.1)',
+            transition: 'all 0.3s ease',
+            boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)'
+          }}>
+          <span style={{
+            fontSize: '1.2rem',
+            marginRight: '2px'
+          }}>←</span>
+          <span>Back to Home</span>
+        </Link>
+      
       <button
         onClick={toggleTheme}
         style={{
@@ -50,7 +80,7 @@ function Counter() {
           fontWeight: "bold",
           cursor: "pointer",
           boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
-          
+          transition: "ease 0.5s",
         }}
       >
         {isDark ? "☀️" : "🌙"}
@@ -129,7 +159,7 @@ function Counter() {
         </div>
       </div>
     </div>
-  );
+  </>)
 }
 
 export default Counter;

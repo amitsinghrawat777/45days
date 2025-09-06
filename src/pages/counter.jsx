@@ -51,7 +51,7 @@ function Counter() {
             alignItems: 'center',
             gap: '8px',
             fontSize: '1rem',
-            padding: '10px 20px',
+            padding: '2px 5px',
             background: 'rgba(255, 255, 255, 0.1)',
             borderRadius: '30px',
             backdropFilter: 'blur(10px)',

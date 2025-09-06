@@ -57,6 +57,15 @@ function Home() {
           <span className="project-name">Skill Manager</span>
           <span className="arrow">→</span>
         </Link>
+        <Link
+        to="/day5"
+        className={`nav-link ${activeLink==='day5'?'active':''}`}
+        onMouseEnter={()=>setActiveLink('day5')}
+        onMouseLeave={()=>setActiveLink(null)}>
+          <span className="day-number">Day 5</span>
+          <span className="project-name">Counter</span>
+          <span className="arrow">→</span>
+        </Link>
       </nav>
     </div>
   )

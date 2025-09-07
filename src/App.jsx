@@ -4,6 +4,7 @@ import BusinessCard from "./components/BusinessCard"
 import GradeCalculator from "./pages/GradeCalculator"
 import SkillManager from "./pages/SkillManager"
 import Counter from "./pages/counter"
+import QuoteGen from "./pages/QuoteGen"
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/grade_calculator" element={<GradeCalculator />} />
           <Route path="/day4" element={<SkillManager />} />
           <Route path="/day5" element={<Counter />}/>
+          <Route path="/day6" element={<QuoteGen />}/>
         </Routes>
       </div>
     </Router>

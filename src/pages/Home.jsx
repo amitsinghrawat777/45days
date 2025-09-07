@@ -66,6 +66,15 @@ function Home() {
           <span className="project-name">Counter</span>
           <span className="arrow">→</span>
         </Link>
+        <Link
+        to="/day6"
+        className={`nav-link ${activeLink==='day6'?'active':''}`}
+        onMouseEnter={()=>setActiveLink('day6')}
+        onMouseLeave={()=>setActiveLink(null)}>
+          <span className="day-number">Day 6</span>
+          <span className="project-name">Quote Generator</span>
+          <span className="arrow">→</span>
+        </Link>
       </nav>
     </div>
   )
